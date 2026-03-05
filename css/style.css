@@ -13,6 +13,7 @@ body{
 .interface{
     max-width: 1280px;
     margin: 0 auto;
+    padding: 0 4%;
 }
 
 header{
@@ -79,7 +80,9 @@ header .contato button:hover, .hero button:hover{
 }
 
 section.hero{
-    height: 100vh;
+    height: 95vh;
+    max-width: none;
+    width: auto;
     background-image: url(../images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -290,6 +293,7 @@ button.option-btn {
 button.option-btn:hover {
   background-color: #0f6669;
 }
+
 
 
 
