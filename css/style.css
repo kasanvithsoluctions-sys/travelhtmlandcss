@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body{
+    background-color: #fff
+}
+
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+header{
+    width: 100%;
+    padding: 40px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+header .interface{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header  .menu nav ul{
+    list-style-type: none;
+}
+header .menu ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.menu nav a:hover{
+   transform: scale();
+}
+
+.menu nav a{
+  color: aliceblue;
+  text-decoration: none;
+}
+
+header .contato button{
+    width: 140px;
+    height: 50px; 
+
+}
+
+
+
+header .contato button, .hero button{
+    font-size: 18px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+    transition: .5s;
+}
+header .contato button:hover, .hero button:hover{
+  cursor: pointer;
+  background-color: #fff;
+  color: black;
+}
+
+section.hero{
+    height: 100vh;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+}
+
+.hero .interface{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.hero .texto-hero h1{
+    font-size: 4em;
+    line-height: 70px;
+    font-weight: 300;
+
+}
+.hero .texto-hero h1 span{
+    display: block;
+     font-weight: 800;
+}
+
+.hero .texto-hero p{
+    font-size: 20px;
+    font-weight: 300;
+    margin: 20px 0;
+
+}
+
+.hero .texto-hero p span{
+    display: block;
+
+}
+.hero button{
+    width: 220px;
+    height: 60px;
+    font-size: 20px;
+}
+
