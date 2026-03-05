@@ -7,7 +7,7 @@
 
 
 body{
-    background-color: #fff
+    background-color: #E3E3E3;
 }
 
 .interface{
@@ -27,6 +27,17 @@ header .interface{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header.rolar{
+    background-color: #fff;
+    padding: 22px 0;
+}
+header.rolar .menu nav ul li a{
+    color: #000;
+}
+header.rolar .contato button{
+    border: 1px solid #000;
+    color: #000;
 }
 
 header  .menu nav ul{
@@ -76,6 +87,7 @@ section.hero{
     color: #fff;
 }
 
+
 .hero .interface{
     display: flex;
     align-items: center;
@@ -108,4 +120,176 @@ section.hero{
     height: 60px;
     font-size: 20px;
 }
+section.vantagens{
+    padding: 80px 0;
+}
+.vantagens .itens-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    margin-bottom: 60px;
+
+}
+.vantagens .itens-container .img-itens img{
+    max-width: 300px;
+}
+.vantagens .itens-container .txt-itens h3{
+    font-size: 2em;
+    line-height: 50px;
+    margin-bottom: 20px;
+
+}
+.itens-container .txt-itens h3 span{
+    font-weight: 400;
+}
+section .contato{
+    background-color: #fff;
+    padding: 80px 0;
+}
+.txt-contato, .icons-contato{
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.contato .txt-contato h3{
+    font-size: 2em;
+    line-height: 50px;
+    font-weight: 300;
+    margin-bottom: 20px;
+    
+}
+.contato .txt-contato h3 span{
+    display: block;
+    font-weight: 700;
+
+
+}
+.contato .icons-contato a{
+    text-decoration: none;
+
+}
+.contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    transition: .7;
+}
+.contato .icons-contato button i{
+    font-size: 23px;
+}
+.contato .icons-contato button:hover{
+  background-color: #000;
+}
+.contato .icons-contato button:hover i{
+    color: #fff;
+}
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
+}
+
+
+#chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+}
+
+
+#chat-icon {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 24px;
+}
+
+#chat-icon:hover{
+   background-color: #fff;
+   transition: .5s;
+}
+
+#chat-box {
+  width: 300px;
+  border-radius: 10px 10px 0 0;
+  background: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+
+#chat-header {
+  background-color: #000;
+  color: white;
+  padding: 10px;
+  position: relative;
+  text-align: center;
+}
+
+
+#close-btn {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+
+#chat-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+#messages {
+  height: 150px;
+  overflow-y: auto;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+button.option-btn {
+  margin: 5px 0;
+  padding: 5px 10px;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: #000;
+  color: white;
+}
+
+button.option-btn:hover {
+  background-color: #0f6669;
+}
+
+
 

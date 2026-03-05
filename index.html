@@ -8,59 +8,141 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" 
-    rel="stylesheet">
- 
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <script src="js/script.js" defer></script>
+
 </head>
+<!-- Ícone do chat -->
+<div id="chat-widget">
+    <div id="chat-icon">💬</div> <!-- ícone redondo -->
+    <div id="chat-box">
+        <div id="chat-header">
+            Assistente
+            <button id="close-btn">✖</button>
+        </div>
+        <div id="chat-body">
+            <div id="messages">
+                <p>Hello! How can I help you today? Please choose a category.</p>
+            </div>
+            <div id="options"></div>
+        </div>
+    </div>
+</div>
 
 <body>
-    <header>
+    <header id="header">
+
         <div class="interface">
 
             <section class="logo">
-                <h1>oi</h1>
             </section>
 
             <section class="menu">
                 <nav>
                     <ul>
-                        <li><a href="#">inicio</a></li>
-                        <li><a href="#">destino</a></li>
-                        <li><a href="#">hoteis</a></li>
-                        <li><a href="#">passagens</a></li>
+                        <li><a href="#">Reviews</a></li>
+                        <li><a href="#">Destination</a></li>
+                        <li><a href="#">Hotéls</a></li>
+                        <li><a href="#">Flights</a></li>
                     </ul>
                 </nav>
             </section>
 
 
             <section class="contato">
-                <a href="#">
-                    <button>Contato</button>
-                </a>
+
             </section>
 
         </div>
 
     </header>
     <section class="hero">
+        <div class="overlay"></div>
         <div class="interface">
             <div class="texto-hero">
-                <h1>Descubra um
-                    <span> novo mundo!</span></h1>
-                    <p>Descubra destinos que cabem no seu bolso</p>
-                    <a href="#"><button>Quero conhecer!</button></a>
+                <h1>Discover a
+                    <span> new world!</span>
+                </h1>
+                <p>Explore budget-friendly destinations!</p>
+                <a href="#"><button>I want to know</button></a>
             </div>
         </div>
     </section>
     <section class="vantagens">
-       <div class="interface">
-        <article class="itens-container">
-            <div class="txt-itens">
-                <h3><span>Viaje</span>com<br> conforto</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus ratione quaerat officiis culpa labore nihil debitis iusto, adipisci dolorum dicta reiciendis beatae aliquam minima minus cumque neque nesciunt incidunt libero.</p>
-            </div>
-        </article>
-       </div>
+        <div class="interface">
+            <article class="itens-container">
+                <div class="txt-itens">
+                    <h3><span>Discover</span> paradises <br> Islands & Resorts</h3>
+                    <p>Escape to the world’s most stunning islands and luxurious resorts.
+Relax on pristine beaches, swim in crystal-clear waters, and soak up the sun.
+Experience top-notch amenities, fine dining, and exclusive accommodations.
+From secluded retreats to vibrant coastal escapes, find your perfect getaway.
+Plan your dream vacation with ease and convenience.
+Curated resorts ensure comfort, privacy, and unforgettable experiences.
+Book now and turn your tropical dreams into reality..</p>
+                </div>
+                <div class="img-itens">
+                    <img src="images/image1.jpg" alt="">
+                </div>
+            </article>
+            <article class="itens-container">
+                <div class="img-itens">
+                    <img src="images/image2.jpg" alt="">
+                </div>
+                <div class="txt-itens">
+                    <h3><span>The</span> best<br> hotels</h3>
+                    <p>Book hotels in the heart of the city or near top attractions.
+                        Walk to popular restaurants, shopping areas, and cultural sites.
+                        Rooms are fully equipped with modern furniture and amenities.
+                        Enjoy free Wi-Fi, breakfast options, and room service.
+                        Reservations are simple with our secure online platform.
+                        Compare prices, read traveler reviews, and select the best deal.
+                        Make every trip efficient, comfortable, and hassle-free.</p>
+                </div>
+            </article>
+            <article class="itens-container">
+                <div class="txt-itens">
+                    <h3><span>The</span> best<br> destinations</h3>
+                    <p>Discover breathtaking cities, hidden gems, and must-see landmarks.
+                        Plan your next adventure with ease and style.
+                        Experience local culture, cuisine, and unforgettable moments.
+                        From bustling cities to serene escapes, find your perfect spot.
+                        Enjoy curated travel options that suit your style and budget.
+                        Book now and start exploring destinations like never before.</p>
+                </div>
+                <div class="img-itens">
+                    <img src="images/image3.jpg" alt="">
+                </div>
+            </article>
+        </div>
+    </section>
+    <section class="contato">
+        <div class="interface">
+            <article class="txt-contato">
+                <h3>Speak with Our <span>Team Now</span></h3>
+                <p>E solicite um orçamento que cabe no seu bolso</p>
+            </article>
+            <article class="icons-contato">
+                <a href="#"></a>
+                <button><i class="bi bi-whatsapp"></i>
+                    <p>Contact us on WhatsApp </p>
+                </button>
+                <a href="#"></a>
+                <button><i class="bi bi-envelope-at-fill"></i>
+                    <p>Send email</p>
+                </button>
+                <a href="#"></a>
+                <button><i class="bi bi-question-octagon"></i>
+                    <p>Most common questions</p>
+                </button>
+                <a href="#"></a>
+                <button><i class="bi bi-ui-checks"></i>
+                    <p>Fill out the form</p>
+                </button>
+            </article>
+        </div>
     </section>
 </body>
 
