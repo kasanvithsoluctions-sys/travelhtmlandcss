@@ -38,10 +38,6 @@ header .btn-menu-mobile .line-menu-mobile-2{
     width: 20px;
 }
 
-header.rolar .btn-menu-mobile div{
-    background-color: #131212;
-}
-
 .interface{
     max-width: 1280px;
     margin: 0 auto;
