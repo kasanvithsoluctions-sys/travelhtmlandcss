@@ -4,3 +4,80 @@
     }
     
 }
+@media screen  and (max-width: 742px){
+.vantagens .itens-container{
+flex-direction: column;
+
+}
+.vantagens .itens-container .img-itens img{
+    width: 100%;
+}
+.vantagens .itens-container .txt-itens p{
+    margin-bottom: 30px;
+}
+.vantagens .itens-container .txt-itens h3{
+    font-size: 2em;
+    line-height: 50px;
+    margin-bottom: 20px;
+
+}
+.itens-container .txt-itens h3 span{
+    font-weight: 400;
+}
+.vantagens .itens-container .item-1{
+    order: 1;
+}
+.vantagens .itens-container .item-2{
+    order: 0;
+}
+
+.txt-contato, .icons-contato{
+    display: block;
+    width: 100%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+.contato .txt-contato h3{
+    font-size: 2em;
+    line-height: 40px;
+    align-items: center;   
+}
+
+.contato .txt-contato p{
+    margin-bottom: 20px;
+
+}
+.contato .icons-contato a{
+    text-decoration: none;
+
+}
+.contato .icons-contato button{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+
+    transition: .7;
+}
+.contato .icons-contato button i{
+    font-size: 23px;
+}
+.contato .icons-contato button:hover{
+  background-color: #000;
+}
+.contato .icons-contato button:hover i{
+    color: #fff;
+}
+.contato .icons-contato button:hover i, .contato .icons-contato button:hover p{
+    color: #fff;
+}
+}

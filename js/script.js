@@ -36,20 +36,20 @@ const closeBtn = document.getElementById("close-btn");
 const messages = document.getElementById("messages");
 const options = document.getElementById("options");
 
-// Open chat
+
 chatIcon.addEventListener("click", () => {
   chatIcon.style.display = "none";
   chatBox.style.display = "flex";
   showCategories();
 });
 
-// Close chat
+
 closeBtn.addEventListener("click", () => {
   chatBox.style.display = "none";
   chatIcon.style.display = "flex";
 });
 
-// Show categories
+
 function showCategories() {
   options.innerHTML = "";
   for (let category in faqs) {
@@ -61,7 +61,7 @@ function showCategories() {
   }
 }
 
-// Show questions for a category
+
 function showQuestions(category) {
   options.innerHTML = "";
   faqs[category].forEach(item => {
@@ -73,10 +73,24 @@ function showQuestions(category) {
   });
 }
 
-// Send question and display answer
+
 function sendQuestion(question, answer) {
   messages.innerHTML += `<p>You: ${question}</p>`;
   messages.innerHTML += `<p>Assistant: ${answer}</p>`;
   messages.scrollTop = messages.scrollHeight;
   showCategories();
 }
+
+let btnMenuMob = document.querySelector('#btn-menu-mobile')
+let line1 = document.querySelector('line-menu-mobile-1')
+let line2 = document.querySelector('line-menu-mobile-2')
+
+
+btnMenuMob.addEventListener("click", ()=>{
+    line1.classList.toggle('ativo1')
+    line2.classList.toggle('ativo2')
+
+
+})
+
+

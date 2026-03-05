@@ -3,11 +3,43 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+
+
 }
 
 
 body{
     background-color: #E3E3E3;
+}
+
+header .btn-menu-mobile .line-menu-mobile-1.ativo1{
+    transform: rotate(45deg);
+
+}
+
+header .btn-menu-mobile .line-menu-mobile-2.ativo2{
+    transform: rotate(-45deg);
+
+
+}
+header .btn-menu-mobile div{
+    background-color: #fff;
+    height: 3px;
+    margin: 10px 0;
+}
+
+header .btn-menu-mobile div:hover{
+    cursor: pointer;
+}
+header .btn-menu-mobile .line-menu-mobile-1{
+    width: 30px;
+}
+header .btn-menu-mobile .line-menu-mobile-2{
+    width: 20px;
+}
+
+header.rolar .btn-menu-mobile div{
+    background-color: #131212;
 }
 
 .interface{
@@ -22,8 +54,9 @@ header{
     position: fixed;
     top: 0;
     left: 0;
-
 }
+
+
 header .interface{
     display: flex;
     justify-content: space-between;
